@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-x4m$gfeda-r+)u05g*bzm%8#_vz&8-wl^3epo45gqi#_eqwvtq
 DEBUG = True
 
 ALLOWED_HOSTS = ['ecom-test-production.up.railway.app', 'https://ecom-test-production.up.railway.app']
-CSRF_TRUSTED_ORIGINS = ['ecom-test-production.up.railway.app', 'https://ecom-test-production.up.railway.app']
+CSRF_TRUSTED_ORIGINS = ['http://ecom-test-production.up.railway.app', 'https://ecom-test-production.up.railway.app']
 
 # Application definition
 
@@ -88,7 +88,7 @@ DATABASES = {
         'NAME': 'railway',
         'USER': 'postgres',
         'PASSWORD': os.environ.get('DB_PASSWORD_YO'),
-        'HOST': 'postgres-s2jf.railway.internal',
+        'HOST': 'postgres',
         'PORT': '5432',
 
     }
